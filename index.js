@@ -10,7 +10,7 @@ app.get('/getItem',(req,res)=>{
 });
 
 /**
- * addItem method will add new item into the vending machine.
+ * updateItem method will update an existing item or add new item if it does not exist into the vending machine.
  */
 app.post('/updateItem',(req,res)=>{
 
@@ -21,9 +21,10 @@ app.post('/addMoney',(req, res)=>{
 });
 
 app.post('/buyItem',(req,res)=>{
-    
+
 })
 
 app.listen(5000, ()=>{
+    
     console.log('Vending machine service started in 5000');
 })
